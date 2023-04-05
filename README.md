@@ -27,7 +27,8 @@ The results are saved and can be seen in folder performance_result_from_Ilearn_p
 After running the Ilearnplus and saving all performance results, now we want to select the best descriptors by using the second code in this folder. 
 Run file find_bestfeature.ipynb. This code will generate the top 3 descriptors. The 3 best descriptors were saved in folder best_descriptor
 
-# 2. The second file in the code2 folder consists of as follows:
+# 2. Code2 
+The second file in the code2 folder consists of as follows:
 After getting the best descriptor, now we are ready to run the model. There are two experiments.
 The code is divided into several modules. Every module should be called in the main code. 
 The main codes are: 
@@ -64,7 +65,8 @@ This second experiment is more important than the second experiment. What is bei
 ![Picture1](https://user-images.githubusercontent.com/99703772/230028259-0425fed8-1f16-4842-8b91-9e0f32f07d72.jpg)
 
 
-# 3. The last folder (running_best_model) is only a little modification of the second experiment. 
+# 3.Running Best Model 
+The last folder (running_best_model) is only a little modification of the second experiment. 
 We add graphs like ROC and PR curves. We create this to make it easier and faster for the other user when trying our model. Additionally, we generate also the values of the importance of the feature in the reduced descriptor. Run the last updated file  running_best_model_2.ipynb    
 ![Picture2](https://user-images.githubusercontent.com/99703772/230028397-63e70130-4312-4930-b481-73c831d52379.jpg)
 
