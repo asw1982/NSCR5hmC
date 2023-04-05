@@ -43,8 +43,10 @@ After running the machine learning using the compact dataset, we get the perform
 Data_Visualization_1 
 This module focuses on visualizing the performance result. The function for creating the tables and bar graphs is included here. 
 
-## a.	(experiment1_10fold_benchmark) The first experiment processes the given input and feeds this into the model. The input only uses the best descriptor which resulted from the previous process. The dataset will be separated into 3 types of data: training, validation, and testing. The training and validation ratio is 0.9 and the rest is 0.1 used for testing. The location or region of validation data is determined by applying 10 cross-fold validation.
-## b.	(experiment2_10fold_benchmark) The second experiment processes the given input using the best 3 descriptors. This second experiment is more important than the second experiment. What is being done in this experiment is as follows:
+## a.	(experiment1_10fold_benchmark) The first experiment processes the given input and feeds this into the model. 
+The input only uses the best descriptor which resulted from the previous process. The dataset will be separated into 3 types of data: training, validation, and testing. The training and validation ratio is 0.9 and the rest is 0.1 used for testing. The location or region of validation data is determined by applying 10 cross-fold validation.
+## b.	(experiment2_10fold_benchmark) The second experiment processes the given input using the best 3 descriptors. 
+This second experiment is more important than the second experiment. What is being done in this experiment is as follows:
 
 	Combine the descriptor to be 4 fusion descriptor
 	Make a standardization for the feature in the fusion descriptor using the min-max scaler, this is only for finding the most important feature using the chi-squared test purpose.
