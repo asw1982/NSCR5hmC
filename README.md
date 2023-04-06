@@ -64,7 +64,7 @@ The second experiment processes the given input using the best 3 descriptors.
 This one is more important than the second experiment. What are being done in this experiment are as follows:
 
   - to combine the descriptor to be 4 fusion descriptor
-  -	to make a standardization for the feature in the fusion descriptor using the min-max scaler, this is only for finding the most important feature using the chi-squared test purpose.
+  -	to make a normalization for the feature in the fusion descriptor using the min-max scaler, this is only for finding the most important feature using the chi-squared test purpose.
   -	The chi-squared test is used to get the most important features in the fusion descriptor. This process also will eliminate the unimportant features. The number of features will be reduced. 
   -	The output of the chi-squared test is a p-value. Every single feature has its p-value. The higher p-value, the more important one feature is. We set the threshold value to cut off the feature that has a lower p-value than the threshold value.
   -	We try all of the threshold values from 0 and 0.95 to find the best performance
