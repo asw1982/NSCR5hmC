@@ -80,3 +80,7 @@ We add graphs like ROC and PR curves. We create this to make it easier and faste
 ![Picture2](https://user-images.githubusercontent.com/99703772/230028397-63e70130-4312-4930-b481-73c831d52379.jpg)
 
 finding_threshold file in this folder is used to get the optimal value of threshold value in cutting off the features which have a lower p-value than the threshold value. 
+
+
+## Email: 
+agung.unitel@gmail.com
