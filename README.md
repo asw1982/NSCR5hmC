@@ -9,8 +9,9 @@ The first files in the code0 folder consists of as follows:
   - benchmark dataset (this contain dataset used in the experiment)
   - the code for finding the best feature 
   - the performance result generated from IlearnPlus
-Inside the 'Find_Best_Feature' folder, there are two '.ipynb' files. Here are the procedures for getting the best feature 
-## A.Running Ilearnplus 
+Inside the Find_Best_Feature folder, there are two '.ipynb' files. Here are the procedures for getting the best feature 
+
+## A. Running Ilearnplus 
  - Run the featureRNA_2.ipynb to convert data RNA sequence into standard data RNA sequence that can be understood by IlearnPlus 
  - Separate the training data sequence and testing data sequence by 0.1
  - Use only the training data in Ilearnplus 
@@ -57,12 +58,13 @@ This module focuses on visualizing the performance result. The function for crea
 ## A.	(experiment1_10fold_benchmark) 
 The first experiment processes the given input and feeds this into the model. 
 The input only uses the best descriptor which resulted from the previous process. The dataset will be separated into 3 types of data: training, validation, and testing. The training and validation ratio is 0.9 and the rest is 0.1 used for testing. The location or region of validation data is determined by applying 10 cross-fold validation.
+
 ## B.	(experiment2_10fold_benchmark) 
 The second experiment processes the given input using the best 3 descriptors. 
-This second experiment is more important than the second experiment. What are being done in this experiment are as follows:
+This one is more important than the second experiment. What are being done in this experiment are as follows:
 
-  - Combine the descriptor to be 4 fusion descriptor
-  -	Make a standardization for the feature in the fusion descriptor using the min-max scaler, this is only for finding the most important feature using the chi-squared test purpose.
+  - to combine the descriptor to be 4 fusion descriptor
+  -	to make a standardization for the feature in the fusion descriptor using the min-max scaler, this is only for finding the most important feature using the chi-squared test purpose.
   -	The chi-squared test is used to get the most important features in the fusion descriptor. This process also will eliminate the unimportant features. The number of features will be reduced. 
   -	The output of the chi-squared test is a p-value. Every single feature has its p-value. The higher p-value, the more important one feature is. We set the threshold value to cut off the feature that has a lower p-value than the threshold value.
   -	We try all of the threshold values from 0 and 0.95 to find the best performance
@@ -74,7 +76,7 @@ This second experiment is more important than the second experiment. What are be
 
 # 3. Running Best Model 
 The last folder (running_best_model) is only a little modification of the second experiment. 
-We add graphs like ROC and PR curves. We create this to make it easier and faster for the other user when trying our model. Additionally, we generate also the values of the importance of the feature in the reduced descriptor. Run the last updated file  running_best_model_2.ipynb    
+We add graphs like ROC and PR curves. We create this to make it easier and faster for the other user when trying our model. Additionally, we generate also the values of the importance of the feature in the reduced descriptor by model perspective. Run the last updated file  running_best_model_2.ipynb    
 ![Picture2](https://user-images.githubusercontent.com/99703772/230028397-63e70130-4312-4930-b481-73c831d52379.jpg)
 
 finding_threshold file in this folder is used to get the optimal value of threshold value in cutting off the features which have a lower p-value than the threshold value. 
